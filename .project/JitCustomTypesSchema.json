@@ -1,0 +1,137 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "BaLgJpDHFVDCWOCQmAff45Lxdm/QxxlXNAb6N4dx5VsbI5pHO/s8rwZu1w5lYfzEBmCP8n042hJte9JyeWXtKg==",
+        "bundleName": "C278D854671_compressPdf_Create",
+        "entitiesBundle": {
+          "Types": {
+            "compressPdf_Create": {
+              "name": "compressPdf_Create",
+              "properties": [
+                {
+                  "name": "id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "location",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdf_Create",
+        "hash": "QmFMZ0pwREhGVkRDV09DUW1BZmY0NUx4ZG0vUXh4bFhOQWI2TjRkeDVWc2JJNXBITy9zOHJ3WnUxdzVsWWZ6RUJtQ1A4bjA0MmhKdGU5SnllV1h0S2c9PQ",
+        "assemblyName": "C278D854671_compress.Y7Utl27BGP100bBcIZDbU4"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "2/LLpBl5fxgqKakwqlwFJYXZPmBu6fCgXI/ZWbCDgcKbJxRfOM6abp9hXtKvAYdMJ7T+SArvWq8S7cT069LGeg==",
+        "bundleName": "C278D854671_compressPdfStatus_Retrieve",
+        "entitiesBundle": {
+          "Types": {
+            "metadata": {
+              "name": "metadata",
+              "properties": [
+                {
+                  "name": "size",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "type",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "asset": {
+              "name": "asset",
+              "properties": [
+                {
+                  "name": "metadata",
+                  "type": {
+                    "definitionName": "metadata"
+                  }
+                },
+                {
+                  "name": "assetID",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "downloadUri",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "compressPdfStatus_Retrieve": {
+              "name": "compressPdfStatus_Retrieve",
+              "properties": [
+                {
+                  "name": "asset",
+                  "type": {
+                    "definitionName": "asset"
+                  }
+                },
+                {
+                  "name": "status",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdfStatus_Retrieve",
+        "hash": "Mi9MTHBCbDVmeGdxS2Frd3Fsd0ZKWVhaUG1CdTZmQ2dYSS9aV2JDRGdjS2JKeFJmT002YWJwOWhYdEt2QVlkTUo3VCtTQXJ2V3E4UzdjVDA2OUxHZWc9PQ",
+        "assemblyName": "C278D854671_compress.h7y0V3UxIZM1fTJ8g1gKUq13"
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,1308" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uaic="clr-namespace:UiPath.AdobePdfServices.IntegrationService.Client;assembly=UiPath.AdobePdfServices.IntegrationService" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdf_Create.Bundle;assembly=C278D854671_compress.Y7Utl27BGP100bBcIZDbU4" xmlns:uiascb1="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdfStatus_Retrieve.Bundle;assembly=C278D854671_compress.h7y0V3UxIZM1fTJ8g1gKUq13" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdf_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdf_Create.Bundle</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
+      <x:String>UiPath.BAF.Infrastructure</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
+      <x:String>UiPath.AdobePdfServices.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+      <x:String>UiPath.AdobePdfServices.IntegrationService.Client</x:String>
+      <x:String>UiPath.AdobePdfServices.IntegrationService.Client</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdfStatus_Retrieve.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C278D854671_compressPdfStatus_Retrieve.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>C278D854671_compress.Y7Utl27BGP100bBcIZDbU4</AssemblyReference>
+      <AssemblyReference>C278D854671_compress.Y7Utl27BGP100bBcIZDbU4</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.AdobePdfServices.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.AdobePdfServices.IntegrationService</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>C278D854671_compress.h7y0V3UxIZM1fTJ8g1gKUq13</AssemblyReference>
+      <AssemblyReference>C278D854671_compress.h7y0V3UxIZM1fTJ8g1gKUq13</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="450,1243.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="uiascb:compressPdf_Create" Name="compressedPDFOP" />
+      <Variable x:TypeArguments="x:String" Name="compressJobID" />
+      <Variable x:TypeArguments="upr:IResource" Name="compressedPDFdownload" />
+      <Variable x:TypeArguments="upr:IResource" Name="OUTPDF" />
+      <Variable x:TypeArguments="uaic:CompressPdfStatus" Name="pdfStatus" />
+      <Variable x:TypeArguments="uiascb1:compressPdfStatus_Retrieve" Name="statusForCompressPDF" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACqVVbW/aMBD+K5Y/p6yt2jIh9UOBvqSDERVotU1V5cQH8TB2ZjvtEOK/75yEAKXtpE390pzv7XnuuWNJrwRIbjtaOSYUGNpa0iEwk6QsllA+0taPx4CGKstdbVjSr2wOtEUnQgINaFfYTLJFZbyqjGATIzIntELjOJOacUsY8TFEK/KSiiQlLsWPDAzzfkRY4jSJgaBlos0cOCYaLbKtWkNt3MBw3+xRUURMMf+SRtqKqlZkxJyZBV0F9A5+5cJgmpYzOQQl4J5OWOXaz6UTGTMOM4e2Dy7VPGIGgThfwQetghpuoueZAWsxtgfPIPegdzYORK49dngYgoTEFbALB6InZCstmRg9L1650RnXL2pDgHVGqOkuBccBvVT5fHsmN2KaotM9k3nxGV7fIBP1cx+4wICNQ/+yG4772y49/bL13hs80NXj/1Pd1nyxXSX2368JLJxeczbyGol/et6qoNeMbHoL7Y3gHNR6dv80cUQ7yN2bir8V7mk9r4hP3lUAibpXe0A2nY9FxFzaCJWDaan9IZhnkUDjInHiGekF2xg+XCpX/ts5bn7ufj49OWsebZd/6hhgDhrtXHEJjf2XgLwV2fjWHDt53GxfR0eHh3E7Cb934/FJQO7BeBWeHzUO/R9GI1u5gXMFuTNMBiTKYymSL7AY6Rmoc5VLr3E/e7COtiZMWpz9HdhMKwvvaaFkFwMHqsPUM7Nrx9AiwYX33vIJvkf2rY5J2N2juTT7zfKLVJ+SzZ15Q0F/Q7D+7uSY4n2RvwNs9YhKHCsxEcB9ZTy58wxj8MrWFUNlHVMJ1GLE2CWtJoKpi5lgZrzWCldBGxwCmnMUs0sPGNcxHGR8YksdWfSspLSosK5bx+aKZXp11Eo13ziXlUvht1sjI9h5hyUpIEw9y7PiLPjWanvb6BesGjqYV/bqKmCD1c9HxJIZm8I2mOYumKqZCw/D7w6p9sHjqJ12yTg7raF8uIMfoB3UisCoYmH2KBgMR2jz24pfn3bDe0xNc8SFL3hxMJLZNmaZoaQ6Kb55nqrpjuC3a0udzApGVn8A1RbqsnsHAAA=" ConnectionId="2a1c3de7-72ec-470c-987e-ff278d854671" DisplayName="Compress a PDF" sap:VirtualizedContainerService.HintSize="388,238" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="f3c8840d-882b-3ac1-9421-562b9cb2bd2a">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="_file" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Arpita.Singh\\Downloads\\AIP Paper.pdf")]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="compressionLevel" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">MEDIUM</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_compressPdf" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:compressPdf_Create">[compressedPDFOP]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_id" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[compressJobID]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="Delay_2" />
+    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACo1U70/bMBD9VyJ/DoGOQVElPtAWtvBjRLRl0iaEXOfaeHXsYJ8ZVdX/feckdDDKhPIluTvfvXvvOSt2JkHlbmA0cqnBst6KjYBbUfCpgibJej/vYpbqyuMmsGLfeAmsx2TOYjaUrlJ82YbOzTRKhyEMTlhZoTR6E47MLMICIgsPHhxS1XhZhVMOrdRz+r6hjLSQsx5aD3GD8NII3vbJOBZUlrorwMLkGbc0FgP0UL8mqNcet2I9l3gvTFlZcC7LZyPk6N0b+IO2IqryWeQ2Na92+Qt7IgOeJNUIc1tDHIF9lAKSE4HyUaIEl4y+n2psXgefukfDo4PPh93OWyz3N0AswCMkfa9zBcn7FXG0rVNSdJd7t/uTp/THVWc2Pj+ad+YXk4fOfhzdgnWE7riT7IWHznuF3sKxBo+WqzjK/FRJcQHLsVmAPtZeqVaOIFRvxpUjOW7AVUY7eE+ehvxaIOK7zj6XkmRksucGL1Lru3XMJlrOJOSBV/JjWVFDsuBmbqpJCy1gozdJu2LtVjS33ovGkpU1CDSWFqGwl9So2OG5mcIOKeoadYKkrUDLVskvQP6XghLXFTRSUvSZb0YIB1wUQLuaha9uuSJaAoTr6S+a15iHvJbSTuw/LhsY5UsdfLnVaWTfUX0TzowtOf57iK321h9ybE1pA7hvzW9aO0UoA2CKZ1aW3C6JofZyZ1ws+Bxestl9zWY76iTwGGXDs6i1edhsU/RajcODwGXNzkdu2EsetxK4VZaYfUWsml9BEPF0TKH6F9Fju2+67K5kHvi75HruaWEqAh16cNe3wBfE+6CgXFC29d0YnrCvjFjUVK3/AEOOVn8yBQAA" ConnectionId="2a1c3de7-72ec-470c-987e-ff278d854671" DisplayName="Get Record" sap:VirtualizedContainerService.HintSize="388,207.33333333333334" sap2010:WorkflowViewState.IdRef="ConnectorActivity_5" UiPathActivityTypeId="59a86962-0f9b-37cd-936a-7b3ac9feb358">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="id" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">[compressJobID]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_compressPdfStatus" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb1:compressPdfStatus_Retrieve">[statusForCompressPDF]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[statusForCompressPDF.status.ToString]" />
+    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACr1UTXPTMBD9Kx6d09LyOeNbmzQ0UEhoSy9MD4q9TkRsyUhyS8j0v/Mky47jEMqJk6390O57+7QbNhaUp2aopOVCkmbxht0Q18mSz3OqnSz+dj9gE1lWtjVs2GdeEIuZKklzK5RkAzYSpsz5Ong+qHkEZ6Z0Qanzkkm0KH1sjCI5JTayS4raK7bh0ZzwQ3ALE/HEigdh15FVkUhJWpGt68TKoqcoEzkiFXKiVD3KXPHUF7xdl64PY7WQC5xvlLZTnTqQpwN2IauiC2SoiVuKZqMxQu94Xjlj4o1lmrGnwTZSFaUmY/qxwdyLHqmkKtB0tCC5papJSoO34+zkXvws0XOvDnljr8oVhse1+NUHkDd2H3/vpyAWGMCGzZQRYRgzLQqu17iQXdOPSmjwF1td0aDWx5VK6t5i9qUiBEIO5hPZpUpnXKMD60h1CZ2WRPpHSUxGe1qozZHK/FS3Iuhq6y/DfPk/UTmx+d8+tmlHjDIE7Cq+pMQpl3t3BIwerk+YE1D9s3pfPQ/4EMCpHHL5wE1DxCHAUEoNaP/FX5MplTT7DIyBZA/1WEie77xUIUEBVBqBAAUGtKOi4HaLWSWW7BGQEy92kb+uR0nGsjjjuQGCtp2AqDkPK2jn8MRrdPXIsfmaLB/WcAAev0qRCUpdY1iSRYl07MW2+EQay2VCLX1gasPu8K2rnB6fHJ+gCParxLpT+iOtYa4ELloe8VTN6Qgv05B+EAkZRJ6FZReoaFBgHPPvuKGjwlFQC3yX1pb1HOF7T9YpYMiTJQGxWlWl3wautdZ+rtUjqk4sFcEexIMGw8Kf8WTFF9QF824XTGjmzMHwE73Z4miDdsl4+6aFsi+e9gE8A3fa7gW3Xg+wcHEL0ww04/Cid8EVl4sK2Nw2dcvlkptziG2FlzZcwue4ChO+pZ/2PFfJyrPy9BudV5RbMQcAAA==" ConnectionId="2a1c3de7-72ec-470c-987e-ff278d854671" DisplayName="Download file" sap:VirtualizedContainerService.HintSize="388,290.6666666666667" sap2010:WorkflowViewState.IdRef="ConnectorActivity_4" UiPathActivityTypeId="9608827d-8d3b-36e6-94a6-a9ce9f47ad00">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="operation" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">compresspdf</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="id" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">[compressJobID]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Response" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="upr:IResource">[OUTPDF]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="fileName" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">C:\Users\Arpita.Singh\Downloads\AIPiiiiiiiiiiiPaper.pdf</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+  </Sequence>
+</Activity>
